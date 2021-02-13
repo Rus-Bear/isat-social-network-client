@@ -1,0 +1,39 @@
+.post {
+  margin: 10px 0;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  &__header {
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 30px;
+    }
+    &_info {
+      padding: 0 10px;
+      p {
+        margin: 0;
+      }
+      span {
+        color: #4f4f4f;
+      }
+    }
+  }
+  &__imgs {
+    padding: 5px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
