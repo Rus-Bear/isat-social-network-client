@@ -1,0 +1,16 @@
+.sheduleNextDay {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #cbcbcb;
+  margin-bottom: 10px;
+  h3 {
+    margin: 0;
+    padding: 10px 10px;
+    color: #1877F2;
+  }
+  &__lessons {
+    display: flex;
+    flex-direction: column;
+  }
+}

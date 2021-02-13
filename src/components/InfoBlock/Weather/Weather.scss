@@ -1,0 +1,36 @@
+.weather {
+  width: 100%;
+  background: url("https://i.pinimg.com/originals/b0/84/db/b084db386ccd94cf67b314d49d7cad76.jpg") no-repeat center;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #cbcbcb;
+  margin-bottom: 10px;
+  h3 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    padding: 10px 10px 5px 10px;
+  }
+  &__generalInfo {
+    display: flex;
+    padding: 0 10px;
+    i {
+      font-size: 50px;
+    }
+    .fa-sun {
+      color: #ffee56;
+    }
+    &_numbers {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+  }
+  p {
+    padding: 0 10px;
+    color: #ffffff;
+  }
+}

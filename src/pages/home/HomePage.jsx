@@ -1,11 +1,17 @@
 import React from 'react';
+
 import './HomePage.scss';
-import NavBar from "../../components/NavBar/NavBar";
+
+import LinksBlock from "../../components/LinksBlock/LinksBlock";
+import ContentBlock from "../../components/ContentBlock/ContentBlock";
+import InfoBlock from "../../components/InfoBlock/InfoBlock";
 
 const HomePage = () => {
     return (
-        <div>
-            <NavBar />
+        <div className="homePage" >
+            <LinksBlock />
+            <ContentBlock />
+            <InfoBlock />
         </div>
     );
 };

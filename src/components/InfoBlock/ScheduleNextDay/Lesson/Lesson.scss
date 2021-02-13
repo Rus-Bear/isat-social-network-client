@@ -1,0 +1,14 @@
+.lesson {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 1px #cbcbcb;
+  &__time {
+    padding: 5px 10px;
+    border-right: 2px solid #fafafa;
+  }
+  &__name {
+    margin-left: 10px;
+  }
+}

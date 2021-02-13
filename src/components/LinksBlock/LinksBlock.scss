@@ -1,0 +1,40 @@
+.linksBlock {
+  margin-left: -10px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  a {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    &:hover {
+      background: #D8DADF;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50px;
+    }
+    i {
+      width: 35px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .fa-cloud-sun {
+      color: #2291ff;
+    }
+    .fa-map-marked-alt {
+      color: #e44864;
+    }
+    p {
+      margin-left: 10px;
+    }
+  }
+}
