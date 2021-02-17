@@ -1,0 +1,21 @@
+.settingsPopup {
+  width: 100%;
+  min-height: 50%;
+  max-height: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 10px #afafaf;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #1877F2;
+    border-radius: 10px;
+  }
+}

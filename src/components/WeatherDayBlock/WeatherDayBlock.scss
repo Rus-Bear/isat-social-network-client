@@ -1,0 +1,51 @@
+.weatherDayBlock {
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: inset 0 0 5px #cdcdcd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  &__date {
+    padding-bottom: 10px;
+    h3 {
+      color: #282c34;
+      margin: 0;
+    }
+    h4 {
+      color: #606060;
+      margin: 0;
+    }
+  }
+  &__generalInfo {
+    padding: 10px 0 10px 0;
+    i {
+      font-size: 50px;
+    }
+    .fa-sun {
+      color: #ffee56;
+    }
+    p {
+      color: #606060;
+      margin: 0;
+      span {
+        color: #282c34;
+      }
+    }
+  }
+  &__overInfo {
+    display: flex;
+    flex-direction: column;
+    &_paragraph {
+      display: flex;
+      align-items: center;
+      i {
+        color: #282c34;
+        width: 25px;
+      }
+      p {
+        margin: 0;
+        color: #282c34;
+      }
+    }
+  }
+}
