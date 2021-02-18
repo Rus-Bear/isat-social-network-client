@@ -1,0 +1,54 @@
+.AccountInfo {
+  width: 97.5%;
+  margin: 100px 10% 0 2.5%;
+  h2 {
+    color: #ffffff;
+    margin-top: 0;
+  }
+  &__infoBlock {
+    width: 100%;
+    background: #ffffff;
+    padding: 1px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #cdcdcd;
+    p {
+      color: #606060;
+      span {
+        color: #282c34;
+      }
+    }
+  }
+  &__socialBlock {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #cdcdcd;
+    a {
+      text-decoration: none;
+      i {
+        font-size: 32px;
+        margin: 5px 12px;
+      }
+      .fa-vk {
+        color: #2787F5;
+      }
+      .fa-instagram {
+        background: linear-gradient(45deg, #FEC260 20%, #9536C2 80%, #4C5FD4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .fa-facebook-f {
+        background: linear-gradient(45deg, #0164E1 20%, #16A5FB 80%, #4C5FD4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .fa-google {
+        background: linear-gradient(45deg, #3C79DB 20%, #CF4037 80%, #319851);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
