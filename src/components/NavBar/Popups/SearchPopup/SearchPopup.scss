@@ -1,10 +1,10 @@
-.popups {
+.searchPopup {
   position: absolute;
   width: 25%;
   height: 50vh;
-  right: 25px;
+  left: 25px;
   top: 50px;
-  &__groupsPopup {
+  &__block {
     width: 100%;
     min-height: 50%;
     max-height: 100%;

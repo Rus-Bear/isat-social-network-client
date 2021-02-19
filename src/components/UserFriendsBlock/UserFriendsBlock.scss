@@ -1,0 +1,71 @@
+.userFriends {
+  width: 80%;
+  height: 80vh;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #cdcdcd;
+  &__searchBlock {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    .fa-search {
+      position: absolute;
+      margin-left: 15px;
+      color: #4f4f4f;
+    }
+    input {
+      width: 100%;
+      height: 80%;
+      outline: none;
+      border-radius: 50px;
+      border: none;
+      background: #F0F2F5;
+      padding-left: 40px;
+      padding-right: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #4f4f4f;
+    }
+  }
+  &__friendsBlock {
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+      background: #ffffff;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #1877F2;
+      border-radius: 10px;
+    }
+    &_globalSearchLink {
+      a {
+        height: 50px;
+        padding: 5px 10px;
+        margin: 2px 0;
+        border-radius: 10px;
+        background: #fafafa;
+        transition: .2s;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        &:hover {
+          background: #F2F2F2;
+        }
+        i {
+          font-size: 40px;
+          color: #1877F2;
+        }
+        span {
+          margin-left: 10px;
+          color: #282c34;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

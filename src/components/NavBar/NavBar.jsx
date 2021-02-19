@@ -1,14 +1,16 @@
 import React from 'react';
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 import './NavBar.scss';
 
 import SettingsPopup from "./Popups/SettingsPopup/SettingsPopup";
 import LinksPopup from "./Popups/LinksPopup/LinksPopup";
 import GroupsPopup from "./Popups/GroupsPopup/GroupsPopup";
+import SearchPopup from "./Popups/SearchPopup/SearchPopup";
 
 const NavBar = () => {
     const [viewPopup, setViewPopup] = React.useState('hide');
+    const [viewSearch, setViewSearch] = React.useState(false);
 
     const setPopupType = (type) => {
         viewPopup === type ? setViewPopup('hide'): setViewPopup(type)
@@ -18,7 +20,21 @@ const NavBar = () => {
         <div className="navBar">
             <div className="navBar__searchBlock">
                 <img alt="social-logo" src="assets/img/logo.png" />
-                <i className="fas fa-search"></i><input type="search" placeholder="Найти в Lacis" />
+                <i className="fas fa-search"></i>
+                <input
+                    onFocus={() => setViewSearch(!viewSearch)}
+                    onBlur={() => {
+                        setTimeout(() => setViewSearch(!viewSearch), 220)
+                    }}
+                    type="search"
+                    placeholder="Найти в Lacis"
+                />
+                {
+                    viewSearch === true ?
+                        <SearchPopup />
+                        :
+                        ''
+                }
             </div>
             <div className="navBar__mainBlock">
                 <NavLink exact to="/" data-tooltip="Главная" ><i className="fas fa-home"></i></NavLink>
@@ -50,26 +66,24 @@ const NavBar = () => {
                     <i className="fas fa-sliders-h"></i>
                 </button>
             </div>
-            <div className="navBar__popups">
-                {
-                    viewPopup === "settings" ?
-                        <SettingsPopup />
-                        :
-                        ''
-                }
-                {
-                    viewPopup === "links" ?
-                        <LinksPopup />
-                        :
-                        ''
-                }
-                {
-                    viewPopup === "groups" ?
-                        <GroupsPopup />
-                        :
-                        ''
-                }
-            </div>
+            {
+                viewPopup === "settings" ?
+                    <SettingsPopup />
+                    :
+                    ''
+            }
+            {
+                viewPopup === "links" ?
+                    <LinksPopup />
+                    :
+                    ''
+            }
+            {
+                viewPopup === "groups" ?
+                    <GroupsPopup />
+                    :
+                    ''
+            }
         </div>
     );
 };

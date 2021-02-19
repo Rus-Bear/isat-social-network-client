@@ -1,0 +1,32 @@
+.settingsLink {
+  width: calc(100% - 30px);
+  padding: 2px 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  i {
+    font-size: 40px;
+    width: 40px;
+  }
+  .fa-user {
+    background: linear-gradient(45deg, #ffbe4c 20%, #fedc60 80%, #FEC260);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .fa-heart {
+    background: linear-gradient(45deg, #ff3024 20%, #ff6b61 80%, #ff4d43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #282c34;
+  }
+  &:hover {
+    background: #f2f2f2;
+  }
+  &:active {
+    background: #e9e9e9;
+  }
+}

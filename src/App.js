@@ -12,6 +12,7 @@ import VideoConferencePage from "./pages/videoConference/VideoConferencePage";
 import WeatherPage from "./pages/weather/WeatherPage";
 import MapsPage from "./pages/maps/MapsPage";
 import PrivateRoute from "./components/PrivateRouts/PrivateRoute";
+import FriendsPage from "./pages/friends/FriendsPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/video-conference" component={VideoConferencePage} />
         <Route path="/weather" component={WeatherPage} />
         <Route path="/maps" component={MapsPage} />
+        <Route path="/friends" component={FriendsPage} />
 
         <PrivateRoute />
     </div>

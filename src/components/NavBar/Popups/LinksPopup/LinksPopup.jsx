@@ -5,10 +5,12 @@ import LinkBlock from "./LinkBlock/LinkBlock";
 
 const LinksPopup = () => {
     return (
-        <div className="linksPopup" >
-            <LinkBlock />
-            <LinkBlock />
-            <LinkBlock />
+        <div className="popups">
+            <div className="popups__linksPopup" >
+                <LinkBlock />
+                <LinkBlock />
+                <LinkBlock />
+            </div>
         </div>
     );
 };

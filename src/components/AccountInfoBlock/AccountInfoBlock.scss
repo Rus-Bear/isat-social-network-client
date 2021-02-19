@@ -1,6 +1,6 @@
-.AccountInfo {
-  width: 97.5%;
-  margin: 100px 10% 0 2.5%;
+.accountInfo {
+  width: 100%;
+  margin: 100px 10% 5% 5%;
   h2 {
     color: #ffffff;
     margin-top: 0;
@@ -8,7 +8,7 @@
   &__infoBlock {
     width: 100%;
     background: #ffffff;
-    padding: 1px 15px;
+    padding: 1px 10px;
     border-radius: 10px;
     box-shadow: 0 0 3px #cdcdcd;
     p {
@@ -21,8 +21,8 @@
   &__socialBlock {
     width: 100%;
     background: #ffffff;
-    padding: 10px 15px;
-    margin-top: 10px;
+    padding: 10px 10px;
+    margin: 10px 0 10px 0;
     border-radius: 10px;
     box-shadow: 0 0 3px #cdcdcd;
     a {

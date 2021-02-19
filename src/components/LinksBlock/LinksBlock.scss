@@ -1,10 +1,9 @@
 .linksBlock {
   margin-left: -5px;
-  width: 25%;
+  width: 67.5%;
   display: flex;
-  padding: 0 0 0 20px;
+  padding-left: 20px;
   flex-direction: column;
-  position: fixed;
   left: 0;
   a {
     width: 90%;
@@ -30,11 +29,25 @@
       text-align: center;
       font-size: 30px;
     }
+    .fa-user-friends {
+      background: linear-gradient(45deg, #ffbe4c 20%, #fedc60 80%, #FEC260);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     .fa-cloud-sun {
-      color: #2291ff;
+      background: linear-gradient(45deg, #0164E1 20%, #16A5FB 80%, #4C5FD4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .fa-map-marked-alt {
-      color: #e44864;
+      background: linear-gradient(45deg, #3C79DB 20%, #CF4037 80%, #319851);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .fa-record-vinyl {
+      background: linear-gradient(45deg, #FEC260 20%, #9536C2 80%, #4C5FD4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     p {
       margin-left: 10px;

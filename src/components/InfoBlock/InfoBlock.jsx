@@ -8,10 +8,8 @@ import Weather from "./Weather/Weather";
 const InfoBlock = () => {
     return (
         <div className="infoBlock" >
-            <div>
-                <SheduleNextDay />
-                <Weather />
-            </div>
+            <SheduleNextDay />
+            <Weather />
         </div>
     );
 };

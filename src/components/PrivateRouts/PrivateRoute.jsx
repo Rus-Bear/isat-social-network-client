@@ -7,9 +7,7 @@ const PrivateRoute = () => {
     return (
         <div>
             <Route exact path="/schedule"
-                   render={() => {
-                       return <Redirect to={"/schedule/" + scheduleDays[(new Date).getDay()]} />
-                   }}
+                   render={() => <Redirect to={"/schedule/" + scheduleDays[(new Date()).getDay()]}/>}
             />
         </div>
     );

@@ -1,0 +1,30 @@
+.accountOptions {
+  width: 30%;
+  margin: 100px 0 0 10%;
+  &__block {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px #cdcdcd;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 3px ;
+    }
+    button {
+      width: 100%;
+      background-color: #1877F2;
+      border-radius: 10px;
+      color: #ffffff;
+      outline: none;
+      border: 0;
+      padding: 8px 0;
+      margin: 2px 0;
+      transition: ease-in-out .2s;
+      &:hover {
+        background-color: #1573ec;
+      }
+    }
+  }
+}
